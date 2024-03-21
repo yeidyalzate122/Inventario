@@ -1,0 +1,49 @@
+﻿@model List<TercerInventario.Models.Producto>
+@{
+    ViewData["Title"] = "Home Page";
+}
+
+@if (TempData["SuccessMessage"] != null)
+{
+    <div class="alert alert-success" role="alert">
+        @TempData["SuccessMessage"]
+    </div>
+}
+<div class="card">
+    <div class="card-header">
+        <h5>Lista de productos</h5>
+    </div>
+    <div class="card-body">
+        <a class="btn btn-success btn-sm" asp-action="CategoriaProducto" asp-controller="Home" asp-route-idProducto="0">Crear Producto</a>
+
+        <hr />
+        <table>
+            <thead>
+            <th>Código</th>
+            <th>Producto</th>
+            <th>Categoría </th>
+            </thead>
+            <tbody>
+
+                @foreach (var item in Model)
+                {
+                    <tr>
+                        <td>@item.Id </td>
+                        <td>@item.Nombre </td>
+                        <td>@item.IdCategoriaNavigation.Nombre </td>
+                        <td>
+                            <a class="btn btn-primary btn-sm" asp-action="CategoriaProducto" asp-controller="Home" asp-route-idProducto="@item.Id">Editar</a>
+                            <a class="btn btn-danger btn-sm" asp-action="EiliminarProducto" asp-controller="Home" asp-route-idProducto="@item.Id">Eliminar</a>
+                        </td>
+                    </tr>
+                }
+
+
+
+            </tbody>
+        </table>
+     
+
+    </div>
+
+</div>
