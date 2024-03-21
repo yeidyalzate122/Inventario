@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("TercerInventario")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+11e5d490ff100bd6ff4c8924b6ef32d72f312592")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+899dfb477170ba493607417849383eb1c3832741")]
 [assembly: System.Reflection.AssemblyProductAttribute("TercerInventario")]
 [assembly: System.Reflection.AssemblyTitleAttribute("TercerInventario")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
